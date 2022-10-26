@@ -38,4 +38,21 @@ namespace GUI2
             }
         }
     }
+    public class Logic
+    {
+        public static string Compare(int number)
+        {
+            var step = 1;
+            var last = 0;
+            var list = new List<int>();
+
+            for (last = 0; last <= number;)
+            {
+                last += step;
+                step += 2;
+                list.Add(last);
+            }
+            return "Сформированный ряд: " + string.Join(", ", list) + "\n" + "Ваше число: " + number;
+        }
+    }
 }
