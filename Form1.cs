@@ -1,0 +1,11 @@
+namespace GUI2
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+            num.Text = Properties.Settings.Default.number.ToString();
+        }
+    }
+}
